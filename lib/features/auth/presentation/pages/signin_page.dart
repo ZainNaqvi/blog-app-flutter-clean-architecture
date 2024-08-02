@@ -41,7 +41,10 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 15),
               AuthField(hintText: "Password", isObscureText: true, controller: passwordController),
               const SizedBox(height: 20),
-              const AuthGradientButton(btnText: "Sign in"),
+              AuthGradientButton(
+                btnText: "Sign in",
+                callback: () {},
+              ),
               const SizedBox(height: 15),
               const AlreadyHaveAnAccount(),
             ],
