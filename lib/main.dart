@@ -8,12 +8,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initDependency();
-
   runApp(
     MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => sl<AuthBloc>()),
-      ],
+      providers: [BlocProvider(create: (_) => sl<AuthBloc>())],
       child: const MainApp(),
     ),
   );
